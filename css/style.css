@@ -1,0 +1,12 @@
+.input-border{
+    outline: none;
+    border: 1px solid transparent;  
+}
+
+.input-border:focus{
+    border: 1px solid black;
+}
+
+.btn-close-outline:focus{
+    box-shadow: none;
+}
