@@ -6,7 +6,11 @@ export class MessageView{
         this.spanError = document.getElementById('error_message');
     }
 
-    template(){
-        this.spanError.innerHTML = `<p class="text-danger">This CEP does not exist</p>`
+    template(model){
+        this.spanError.innerHTML = `<p class="text-danger">${model}</p>`
+    }
+
+    cleanTemplate(){
+        this.spanError.innerHTML = '';
     }
 }

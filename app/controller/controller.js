@@ -1,4 +1,4 @@
-import { GetCep } from "../app/helpers/getCep.js";
+import { GetCep } from "../services/getCep.js";
 
 export class Controller {
 
@@ -13,7 +13,5 @@ export class Controller {
 
     showsCepInfo(){
        this.getCep.findCep(this.cepInput.value);
-       this.cepInput.value = '';
-
     }
 }
